@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> AR Cookbook </title>
+	<!-- you will need to link to the css file -->
+    <link href="theStyle.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <style>
+        body{
+            background-color:#ffffff;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--Top nav-->
+        <!--navigation-->
+        <nav>
+        <!--logo--->
+        <a href="index.html" class="logo">JC</a>
+        </nav>
+    
+    <!--landing page Banner-->
+        <div class = "banner">
+        <img src = "cooking.gif">
+        <div class = "BannerContent">
+            <h1>AR COOKBOOK</h1>
+            <h3>iOS Mobile App</h3>
+            <p>AR Cookbook is a mobile app I created in August 2020 that teaches users how to cook through augmented reality tutorials. My role in this project includes the following: Research, User Flows, Information Architecture, Sketching, Wire-framing, UI, Prototyping, Video Editing.</p>
+            <a href="https://www.figma.com/proto/tlhO69Da9sCFhWuClyChf4/AR-Cookbook?node-id=8%3A0&scaling=scale-down" target="_blank"><button> VIEW PROTOTYPE </button></a>
+            <div class="mouse_scroll">
+
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Finding the Problem-->
+    <div class = "p1title">
+    <h1>Phase 1: Discovery</h1>
+    </div>
+    
+   
+   
+    <section class = "problem">
+        <div class = "contentBx">
+            <h2 class = "leftText">Finding the Problem</h2>
+        </div>
+        <div class = "rightText">
+            <p class = "text">According to an online study, between millennials, Gen Xers and baby boomers, millennials rate themselves as the worst kitchen cooks of all, with only 5% of them considering themselves "very good" at home cooking. They also rate themselves last in being able to tackle (very) basic dishes like fried eggs, grilled cheese sandwiches and lasagna.
+            <br>
+            <br>
+            On top of this, cooking apps that incorporate augmented reality still do not exist in the market. Despite how detailed instructions may be or how well instruction videos are made to explain a cooking process, users who are inexperienced with cooking may still find it difficult to follow and understand certain nuances in explanations. Using an AR instructor that shows how dishes are made in real time and in actual scale can help solve this problem. 
+            </p>
+        </div>
+    </section>
+
+    <section class = "research">
+        <div class = "contentBx">
+            <h2 class = "leftText">User Research</h2>
+        </div>
+        <div class = "rightText">
+            <p class = "text">I wanted to learn about what people consider when they seek assistance from downloading cookbook apps: what modes of instruction they like to use, their personal skill level, the complexity of the dish, the types of food preferences they have, and what difficulties they would face. I created a survey on Qualtrics and sent it to twenty participants ranging from the age of 18 to 47 who have tried using cooking apps at least once before. The survey was good for gaining insight, which would help me develop a suitable persona in the later stage. The main takeaways were:
+            </p>
+            <div class ="imgBxIcons"></div>
+        </div>
+    </section>
+
+    
+    <section class = "persona">
+        <div class = "contentBx">
+            <h2 class = "leftText">Persona</h2>
+        </div>
+        <div class = "rightText">
+            <p class = "text">I used the findings to construct a provisional persona, Nova, to help me understand how I can help her/our users achieve their goal using certain features in the app.
+            <br>
+            <br>
+            ‍Meet Nova Scott, a 23 year old student who is terrible in the kitchen but would like to sharpen up her culinary skills so she could start saving food costs.
+            </p>
+            <div class ="imgBxNova"></div>
+        </div>
+    </section>
+   
+
+   <div class = "p2title">
+    <h1>Phase 2: Define</h1>
+    </div>
+
+<!--Brainstorming Features-->
+    <section class = "brainstorming">
+        <div class = "contentBx">
+            <h2 class = "leftText">Brainstorming Features</h2>
+        </div>
+        <div class = "rightText">
+            <p class = "text">To brainstorm features for the product roadmap, I created “How Might We” and “Point of View Questions” using insight from my research and Nova’s profile.
+            <br>
+            <br>
+            </p>
+            <div class ="imgBxBrainstorming"></div>
+            <p class = "question">Q1. How might we help Nova save time and effort in the learning process?
+                <br></p>
+            <p class = "answer">• The AR function would present the instructions one by one so she could go at her own pace and won’t lose track of which step she’s on. She can quickly refer back to the app whenever she needs to.
+                <br></p>
+                <p class = "question">Q2. How might we be more precise and elaborate with the instructions?
+                    <br></p>
+                <p class = "answer">• The AR would be be a projection of the specific step presented in an infinite loop (sort of like a gif). It would be true to scale of actual cooking utensils and ingredients so the user know exactly how to complete each step. There would be nothing ambiguous or unclear.
+                    <br></p>
+                    <p class = "question">Q3. How might we populate results based on Nova’s preferences?
+                        <br></p>
+                    <p class = "answer">• The user will go through a set of on boarding questions for more customised results and can have filter options
+                        <br></p>
+        </div>
+    </section>
+
+
+
+<!--Info Archi-->
+<section class = "architecture">
+    <div class = "contentBx">
+        <h2 class = "leftText">Information Architecture</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">After identifying a set of main features for the bottom navigation, I mapped out the information architecture to show the hierarchy of the features. It will give me a better idea of how to organise the user’s actions.
+        <br>
+        <br>
+        </p>
+        <div class ="imgBxArchi"></div>
+    </div>
+</section>
+         
+
+<!--Info Archi-->
+<section class = "flow">
+    <div class = "contentBx">
+        <h2 class = "leftText">User Flow</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">I developed a general user flow so I have an idea of what the main pages will be for the app. This flow caters to two types of users:
+        <br>• New users who undergo a simple screening process when on-boarding.
+        <br>• Current users who are checking an existing listing
+        <br>
+        </p>
+        <div class ="imgBxFlow"></div>
+    </div>
+</section>
+
+
+
+<div class = "p3title">
+    <h1>Phase 3: Ideate</h1>
+    </div>
+
+
+<!--Onboarding-->
+<section class = "onboarding">
+    <div class = "contentBx">
+        <h2 class = "leftText">On-boarding</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">Similar to the other apps I’ve made, AR Cookbook will also have a short on-boarding process that involves a questionnaire for the user. Instead of listing all recipes on the homepage, I wanted to make it more customised for the user so they can find recipes suited to them quicker. The initial research phase gave me great insight about what kinds of factors users consider when they choose recipes to cook, so I decided to base the on-boarding questions around their responses. Users care about the type of cuisine, allergies and diets, taste preferences, and level of difficulty when choosing recipes. As can be seen in the lofi wireframes below, each of the four on-boarding pages has the instruction at the top and options listed below. One thing to point out is that I chose to use images instead of illustrations for graphics unlike all my previous apps because having images of recipes and ingredients is just much more straight forward and conventional for cookbooks. 
+        <br>
+        <br>
+        </p>
+        <div class ="imgBxOnb"></div>
+    </div>
+</section>
+
+
+<!--Main pages-->
+<section class = "main">
+    <div class = "contentBx">
+        <h2 class = "leftText">Main Pages</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">Straight after the on-boarding process, the user is asked for permission for the app to access the phone’s camera, explaining how by doing this the user can utilise the AR function later on. The homepage is the first icon in the bottom navigation and the first view that the user lands on. The ‘Perfect for you’ tab is where the user can browse through recipes that AR Cookbook recommends based on their on-boarding preferences. Rather than filtering out results that don’t exactly suit the user’s preference, the app just lists results in the order of relevance with the most recommended being at the top. The ‘Explore’ tab at the top of the homepage would bring users to 8 recipe categories (ie. courses, cuisines, diets, kid-friendly etc) to choose from. By splitting recipes into categories, users can save time and find suitable recipes for different occasions. 
+        <br>
+        <br>
+        The search view is the second icon in the bottom navigation. This page is for users who have a certain recipe in mind or are unsure about what recipes they can make with the ingredients they have at hand. If they know what they want to make and need the recipe, they can simply search it up using the search bar at the top of the page. Below that is the ‘Recommended Ingredients’ section with some preset ingredients tabs they can choose from. By choosing or adding the ingredients they have at hand, AR Cookbook will return recipes that use those ingredients. Of course, the recipes won’t always use the exact ingredients that the user has, but it will populate the most relevant results. The search page also brings in an element of AR as users can add ingredients using camera scanning and ingredient recognition. The app would automatically add in the detected ingredients so the user won’t need to manually choose or add them.
+        <br>
+        <br>
+        The third icon is for users to revisit recipes they liked/saved when browsing. The user’s name would be printed in bold at the top of the page to add a touch of personalisation and accentuate the user’s perception of unique customisation in the app. Their liked recipes are all saved in collections (ie. all liked recipes, breakfasts, dessert, dinners etc.) so the user can easily find their liked recipes according to the time of the day and the meal they need to make. Users can also change their account settings on this page. 
+        <br>
+        <br>
+        Finally, the fourth icon on the bottom nav is the shopping list. Since users may not have all ingredients they need to make a recipe, they can add the ingredients to the shopping list page so they can refer back to it when doing grocery shopping. Each ingredient they added has an edit, delete and tick button next to it. The edit button is for users to edit the amount of the ingredient, the delete button is for them to trash the ingredient, and the tick button is for when they have already picked up the ingredient.
+        <br>
+        <br>
+        </p>
+        <div class ="imgBxMain"></div>
+    </div>
+</section>
+
+
+<!--AR-->
+<section class = "arfunction">
+    <div class = "contentBx">
+        <h2 class = "leftText">AR Function</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">The unique selling point of this app is its incorporation of augmented reality. This was the first time I tried working with AR while also facing a few constraints in the process. Firstly, I had minimal experience with creating 3D projects and using softwares such as Unity, Maya, and Blender. After attempting to create simple 3D objects in Blender, I realised that my initial idea of creating a fully functioning AR experience would be way too difficult and time consuming for my level. After doing some research, I noticed that many product designers who experiment with AR would typically just edit a video simulation of the AR function instead of actually creating it. Therefore, I decided to do the same and created a video of what I envision the AR cooking tutorial to look like. The first part of the video (embedded below) shows how the app can use AI to detect the user’s ingredients, and the instructions for each step would be stated on the top left corner. After the app checks if the user has all the ingredients they need for the recipe, a message would automatically pop up and the user can press the ‘Start Cooking’ button.
+        <br>
+        <br>
+        The search view is the second icon in the bottom navigation. This page is for users who have a certain recipe in mind or are unsure about what recipes they can make with the ingredients they have at hand. If they know what they want to make and need the recipe, they can simply search it up using the search bar at the top of the page. Below that is the ‘Recommended Ingredients’ section with some preset ingredients tabs they can choose from. By choosing or adding the ingredients they have at hand, AR Cookbook will return recipes that use those ingredients. Of course, the recipes won’t always use the exact ingredients that the user has, but it will populate the most relevant results. The search page also brings in an element of AR as users can add ingredients using camera scanning and ingredient recognition. The app would automatically add in the detected ingredients so the user won’t need to manually choose or add them.
+        <br>
+        <br>
+        Once the user is ready to start cooking, the app will bring them through the recipe in steps. The cooking utensils and the instruction would be stagnant on the top left corner of the screen. Then, the camera would detect the ingredient placed in front of the camera and use dotted lines and text to indicate where to cut the ingredient in real time and scale. These lines and text would move around according to the placement of the camera and the item. The AR function would also be able to detect movement, and would guide the user to the next step after they are done completing an action. In cases where the user needs to wait for something to cook, a timer would automatically appear at the top right of the screen to indicate how long they need to wait. The user also has flexibility on what step they do and don’t want to complete by simply pressing the ‘Back’ or ‘Skip’ buttons on the bottom right corner.
+        <br>
+        <br>
+        All in all, the AR function is a great fool proof solution to hand hold kitchen dummies through cooking. It acts as a virtual assistant, telling the user exactly what and how to complete an action at each step of the way. By having text and a visual guide, the issues of inefficiency and ambiguity of interpretation would be eliminated. Furthermore, using AR to learn cooking currently isn’t mainstream, so this app may be considered fun and innovative for new users.
+        <br>
+        <br>
+        </p>
+    </div>
+</section>
+
+
+
+<div class = "p4title">
+    <h1>Phase 4: Validate</h1>
+    </div>
+
+<!--User Testing-->
+<section class = "testing">
+    <div class = "contentBx">
+        <h2 class = "leftText">User Testing</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">I conducted user testing using my prototype on Figma to see how five users would complete certain tasks if they were given some context. The goal was to identify pain points that could be improved in future iterations. Tasks I tested for:
+        <br>
+        • Complete on-boarding questions
+        <br>
+        • Navigate to the 'Popular' category on the explore tab
+        <br>
+        • Search for recipes using the recommended ingredients tabs
+        <br>
+        • Add items in the shopping list
+        <br>
+        • View the AR simulation of Omurice recipe
+        <br>
+        </p>
+        <div class ="imgBxTesting"></div>
+    </div>
+</section>
+
+
+
+
+<!--Testing Insights-->
+<section class = "testinginsights">
+    <div class = "contentBx">
+        <h2 class = "leftText">Testing Insights</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">While all of my users passed the five tests, there were some that took a while do navigate around different tabs and pages. Therefore, I will make changes accordingly in order to create a more intuitive experience for users. Apart from this, there were also few improvements that my users suggested:
+        <br>
+        • Add a text based recipe description
+        <br>
+        • Create a 7 day meal plan for people who don’t have time to plan what meals to make
+        <br>
+        • Add an no diet/allergies button in on-boarding
+        <br>
+        • App needs a function for adjusting portion sizes
+        <br>
+        • Would like to see a share page/artboard
+        <br>
+        <br>
+        </p>
+    </div>
+</section>
+
+
+
+<!--Changes-->
+<section class = "changes">
+    <div class = "contentBx">
+        <h2 class = "leftText">Changes</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">• Adding a short description about the purpose of the ‘add ingredient’ function. Some users were not entirely sure what this function was for
+        <br>
+        • Add an option for users to read recipes instead of just having AR. This gives the users who don’t want to user the AR function more flexibility. 
+        <br>
+        • A no diet or allergies button in on-boarding
+        <br>
+        • Making an art board for the ‘share’ function. 
+        <br>
+        • Creating a 7 day meal plan for the user based on their living/working situations.
+        <br>
+        • Create a function for users to adjust portion sizes 
+        <br>
+        <br>
+        </p>
+    </div>
+</section>
+
+
+<!--final boards-->
+<section class = "finalboards">
+</section>
+
+
+<!--Final prototype-->
+    <div class = "banner">
+        <img src = "cooking.gif">
+        <div class = "BannerContent">
+            <h1>Final Prototype</h1>
+            <br>
+            <br>
+            <a href="https://www.figma.com/proto/tlhO69Da9sCFhWuClyChf4/AR-Cookbook?node-id=8%3A0&scaling=scale-down" target="_blank"><button> VIEW PROTOTYPE </button></a>
+            </div>
+        </div>
+
+
+
+<!--phase 5-->
+<div class = "p5title">
+<h1>Phase 5: Evaluate</h1>
+</div>
+
+
+
+<!--challenges and successes-->
+<section class = "challengesuccess">
+    <div class = "contentBx">
+        <h2 class = "leftText">Challenges and Successes</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">The biggest challenge I faced when making this app is being inexperienced at creating 3D models. With time constraints, I wasn’t able to make a fully functioning AR app, which was what I initially wanted to achieve. However, I was able to come up with an alternative solution which was to make simulation through video editing on Blender. In addition, I also hadn’t considered how using AR to cook may be cumbersome in the sense that the user would have to tend to both the app and physically cooking if they use the product. Therefore, the AR function may only be able to benefit those who are beginners at cooking. Despite my current lack of knowledge about how to create AR projects, I would say that I really improved my UX/UI skills compared to when I began two months ago. When I compare my first few apps to this most recent one, I can proudly say that my eye for aesthetics and understanding of user’s needs has definitely improved.
+        </p>
+    </div>
+</section>
+
+<!--stretch goal-->
+<section class = "stretch">
+    <div class = "contentBx">
+        <h2 class = "leftText">Stretch Goal</h2>
+    </div>
+    <div class = "rightText">
+        <p class = "text">What I need to focus on from now is learning how to use softwares like Unity, Blender, and Maya. In order to create AR projects, I must learn and master all the aspects of the 3D pipeline. In addition to this, I would also learn how to use video editing softwares like After Effects so that I can create rapid prototypes of my for AR.
+        </p>
+    </div>
+</section>
+
+
+</body>
+</html>
