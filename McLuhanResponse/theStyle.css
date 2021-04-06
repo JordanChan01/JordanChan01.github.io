@@ -1,0 +1,40 @@
+
+  div {
+    display: flex;
+  }
+  
+  
+  .theButton button{
+    width: 315px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url("eyepiece.jpg");
+    font-size: 0.8rem;
+    margin-left: 610px;
+    margin-top: 240px;
+    border: none;
+}
+
+  
+  h2 {
+    text-align: center;
+    font-family: helvetica;
+    color:rgb(2, 2, 2);
+    position: relative;
+  }
+   
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 0px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  width: 200px;
+  height: 200px;
+}
