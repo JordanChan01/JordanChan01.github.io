@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <title>JQuery game</title>
+             <link href="theStyle.css" rel="stylesheet" /> 
+            <meta name = "viewport" content = "user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+            <meta charset = "utf-8">
+            <link rel = "stylesheet" type= "text/css" href="theStyle.css">
+            <script src="jquery.min.js"></script>
+            <script src="collision.js"></script>
+            <script src="var.js"></script>
+            <script src="functions.js"></script>
+            <script src="script.js"></script>
+        </head>
+
+
+
+<body>
+  <div id="container">
+
+    <div id="score_help"> Score:
+      <span id="score">0</span> | Life:
+      <span id="life"></span> | Use mouse to control
+    </div>
+
+    <div id="branch"></div>
+
+    <div id="monke1" class="monke"></div>
+    <div id="monke2" class="monke"></div>
+    <div id="monke3" class="monke"></div>
+
+    <div id="goodnut1" class="goodnut" data-badnut='1'></div>
+    <div id="goodnut2" class="goodnut" data-badnut='2'></div>
+    <div id="goodnut3" class="goodnut" data-badnut='3'></div>
+
+    <div id="badnut1" class="badnut"></div>
+    <div id="badnut2" class="badnut"></div>
+    <div id="bbadnut3" class="badnut"></div>
+
+    <div id="basket">
+      <span id="score_1"></span>
+    </div>
+
+    <div id="floor"></div>
+
+    <button id="restart">Restart</button>
+  </div>
+  
+</body>
+
+</html>
