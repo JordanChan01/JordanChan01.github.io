@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+ <meta charset="utf-8">
+  <title> RM profile </title>
+  <link rel="icon" type="image/png" href="images/bts.png"> <!--favicon-->
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/profMobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/profTablet.css">
+  <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/profDesktop.css">
+  <meta name="viewport" content="initial-scale=1">
+  
+
+  <style></style>
+ </head>
+ 
+ <body>
+ 		<img id="background" src="images/koya.jpg" width="1437px" height="1400px">
+ 		
+ 		<img id="member" src="images/rm1.png" width="520px" height="800px">
+
+ 		<div id="return"> 
+		 		<a href="index.html">🏠 return to main page!</a>
+		</div>
+
+		<div id="title">
+			<p> Member Profile: RM </p>
+		</div>
+
+    <div id="box">
+    </div>
+
+ 		
+ <div id="content1">
+
+<button class="collapsible">RM's Bio</button>
+<div class="content">
+  <ul>
+  <li>Full Name: Kim Nam Joon (김남준) </li>
+  <li>Position: Leader, Main Rapper</li>
+  <li>Birthday: September 12, 1994</li>
+  <li>Zodiac Sign: Virgo</li>
+  <li>Hobbies: Watching Friends, reading books in English, travelling</li>
+  <li> Fun fact: RM taught himself how to speak English, and can speak it extremely well.</li>
+
+</ul>
+</div>
+<button class="collapsible">RM's High IQ</button>
+<div class="content">
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rkcVncfLTJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<button class="collapsible">Photo Gallery</button>
+<div class="content">
+  <img src="images/rmcollage.jpeg">
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+ 			
+		 	</div> <!--contents-->
+	 		
+
+	 	
+ 		
+
+
+
+
+
+
+
+
+ </body>
+</html>
+
