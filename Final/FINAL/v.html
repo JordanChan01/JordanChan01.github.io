@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+ <meta charset="utf-8">
+  <title> V profile </title>
+  <link rel="icon" type="image/png" href="images/bts.png"> <!--favicon-->
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/profMobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/profTablet.css">
+  <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/profDesktop.css">
+  <meta name="viewport" content="initial-scale=1">
+  
+
+  <style></style>
+ </head>
+ 
+ <body>
+ 		<img id="background" src="images/tata.jpeg" width="1437px" height="1400px">
+ 		
+ 		<img id="member" src="images/v1.png" width="320px" height="650px">
+
+ 		<div id="return"> 
+		 		<a href="index.html">🏠 return to main page!</a>
+		</div>
+
+		<div id="title">
+			<p> Member Profile: V </p>
+		</div>
+
+    <div id="box">
+    </div>
+
+ 		
+ <div id="content1">
+
+<button class="collapsible">V's Bio</button>
+<div class="content">
+  <ul>
+  <li>Full Name: Kim Tae Hyung (김태형) </li>
+  <li>Position: Lead Dancer, Vocalist, Visual</li>
+  <li>Birthday:December 30, 1995</li>
+  <li>Zodiac Sign: Capricorn</li>
+  <li>Hobbies: Photography, producing artwork</li>
+  <li> Fun fact: V loves classical music and plays the saxophone</li>
+
+</ul>
+</div>
+<button class="collapsible">V's artwork</button>
+<div class="content">
+
+  <img src="images/vart.jpeg">
+
+</div>
+<button class="collapsible">Photo Gallery</button>
+<div class="content">
+  <img src="images/vcollage.jpeg" width="400px" height="600px">
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+ 			
+		 	</div> <!--contents-->
+	 		
+
+	 	
+ 		
+
+
+
+
+
+
+
+
+ </body>
+</html>
+

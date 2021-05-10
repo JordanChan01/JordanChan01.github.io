@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+ <meta charset="utf-8">
+  <title> Jimin profile </title>
+  <link rel="icon" type="image/png" href="images/bts.png"> <!--favicon-->
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/profMobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/profTablet.css">
+  <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/profDesktop.css">
+  <meta name="viewport" content="initial-scale=1">
+  
+
+  <style></style>
+ </head>
+ 
+ <body>
+ 		<img id="background" src="images/chimmy.jpeg" width="1437px" height="1400px">
+ 		
+ 		<img id="member" src="images/jimin1.png" width="300px" height="650px">
+
+ 		<div id="return"> 
+		 		<a href="index.html">🏠 return to main page!</a>
+		</div>
+
+		<div id="title">
+			<p> Member Profile: Jimin </p>
+		</div>
+
+    <div id="box">
+    </div>
+
+ 		
+ <div id="content1">
+
+<button class="collapsible">Jimin's Bio</button>
+<div class="content">
+  <ul>
+  <li>Full Name: Park Ji Min (박지민) </li>
+  <li>Position: Main Dancer, Lead Vocalist</li>
+  <li>Birthday: October 13, 1995</li>
+  <li>Zodiac Sign: Pisces</li>
+  <li>Hobbies: Choreograph dances</li>
+  <li> Fun fact: Jimin has black belt in taekwondo</li>
+
+</ul>
+</div>
+<button class="collapsible">Jimin Being Sassy</button>
+<div class="content">
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CjBfpRU_-S8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<button class="collapsible">Photo Gallery</button>
+<div class="content">
+  <img src="images/jimincollage.png" width="400px" height="650px">
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+ 			
+		 	</div> <!--contents-->
+	 		
+
+	 	
+ 		
+
+
+
+
+
+
+
+
+ </body>
+</html>
+
